@@ -27,28 +27,28 @@ event ApprovalForAll:
     approved: bool
 
 
-# @dev Mapping from NFT ID to the address that owns it.
+# Mapping from NFT ID to the address that owns it.
 idToOwner: HashMap[uint256, address]
 
-# @dev Mapping from NFT ID to approved address.
+# Mapping from NFT ID to approved address.
 idToApprovals: HashMap[uint256, address]
 
-# @dev Mapping from owner address to count of his tokens.
+# Mapping from owner address to count of his tokens.
 ownerToNFTokenCount: HashMap[address, uint256]
 
-# @dev Mapping from owner address to mapping of operator addresses.
+# Mapping from owner address to mapping of operator addresses.
 ownerToOperators: HashMap[address, HashMap[address, bool]]
 
-# @dev Address of minter, who can mint a token
+# Address of minter, who can mint a token
 minter: address
 
-# @dev Mapping of interface id to bool about whether or not it's supported
+# Mapping of interface id to bool about whether or not it's supported
 supportedInterfaces: HashMap[bytes32, bool]
 
-# @dev ERC165 interface ID of ERC165
+# ERC165 interface ID of ERC165
 ERC165_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000001ffc9a7
 
-# @dev ERC165 interface ID of ERC721
+# ERC165 interface ID of ERC721
 ERC721_INTERFACE_ID: constant(bytes32) = 0x0000000000000000000000000000000000000000000000000000000080ac58cd
 
 
