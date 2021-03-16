@@ -20,4 +20,4 @@ def _init_():
     
     # mappings cannot be local variable
     p: Person = self.Person
-    p.name = "Larry"
+    p.name = "Derrick"
